@@ -1,0 +1,25 @@
+{
+  "name": "mongoose-repository-plugin",
+  "version": "1.0.5",
+  "description": "mongoose repository plugin for graphql-api-scripts",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelnsantos/mongoose-repository-plugin.git"
+  },
+  "author": "Rafael Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelnsantos/mongoose-repository-plugin/issues"
+  },
+  "homepage": "https://github.com/rafaelnsantos/mongoose-repository-plugin#readme",
+  "dependencies": {
+    "folder-utils": "^2.0.2",
+    "graphql-api-scripts": "^0.0.49",
+    "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.5.41"
+  }
+}
