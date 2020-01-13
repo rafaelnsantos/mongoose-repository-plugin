@@ -4,8 +4,8 @@ const path = require('path')
 
 const isProduction = process.env.NODE_ENV === 'production'
 
-exports.MongooseRepository = (modelsPath, options, debug = "false") => {
-  mongoose.set('debug', debug)
+exports.MongooseRepository = (modelsPath, options, debug = false) => {
+  if (debug) mongoose.set('debug', "true")
 
   requireFolder(path.join(process.cwd(), isProduction ? 'build' : 'src' ,'repositories', modelsPath), '-model', { mode: isProduction ? 'js' : 'ts', inject: mongoose })
   
